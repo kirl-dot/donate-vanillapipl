@@ -1,0 +1,18 @@
+{
+  "name": "minecraft-donation-bot",
+  "version": "1.0.0",
+  "description": "Professional Minecraft Donation Telegram Bot",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-telegram-bot-api": "^0.64.0",
+    "rcon-client": "^4.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
