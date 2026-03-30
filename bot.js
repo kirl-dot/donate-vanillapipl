@@ -2,17 +2,16 @@
 //  MINECRAFT DONATION BOT  —  Configuration
 // ============================================================
 const CONFIG = {
-  BOT_TOKEN: "YOUR_BOT_TOKEN_HERE",
-  ADMIN_ID: 123456789, // Your Telegram numeric user ID
-  ADMIN_PROFILE_LINK: "https://t.me/your_admin_username",
-  UKRAINE_CARD_DETAILS: "4441 1111 2222 3333 (ПриватБанк, Іван І.)",
+  BOT_TOKEN: process.env.BOT_TOKEN,
+  ADMIN_ID: parseInt(process.env.ADMIN_ID),
+  ADMIN_PROFILE_LINK: process.env.ADMIN_PROFILE_LINK,
+  UKRAINE_CARD_DETAILS: process.env.UKRAINE_CARD_DETAILS,
   RCON: {
-    host: "127.0.0.1",
-    port: 25575,
-    password: "your_rcon_password",
+    host: process.env.RCON_HOST,
+    port: parseInt(process.env.RCON_PORT),
+    password: process.env.RCON_PASSWORD,
   },
 };
-
 // ============================================================
 //  Dependencies
 // ============================================================
